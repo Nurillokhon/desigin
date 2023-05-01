@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards .container {
+  margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+  padding: 5rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banner-sub-title {
+  font-size: 1.25rem;
+  color: #777;
+}
+
+.banner-title {
+  font-size: 3rem;
+  max-width: 70%;
+}
+
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.user-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.user-cards-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.user-cards-title {
+  font-size: 1.25rem;
+}
+
+.user-cards-text {
+  max-width: 70%;
+  text-align: left;
+  padding-bottom: 1rem;
+  color: #777;
+}
+
+.banner-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: .75rem 1rem .75rem 0;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.banner-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .1s ease;
+}
+
+.banner-btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.arrow-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
